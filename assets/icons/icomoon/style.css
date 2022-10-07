@@ -1,0 +1,252 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?mx7f6m');
+  src:  url('fonts/icomoon.eot?mx7f6m#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?mx7f6m') format('truetype'),
+    url('fonts/icomoon.woff?mx7f6m') format('woff'),
+    url('fonts/icomoon.svg?mx7f6m#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-lg-calendar:before {
+  content: "\e913";
+}
+.icon-lg-language:before {
+  content: "\e93c";
+}
+.icon-lg-sample-product:before {
+  content: "\e955";
+}
+.icon-lg-search:before {
+  content: "\e957";
+}
+.icon-lg-zoom-in:before {
+  content: "\e95b";
+}
+.icon-lg-add:before {
+  content: "\e903";
+}
+.icon-lg-attachment:before {
+  content: "\e90f";
+}
+.icon-lg-bookmark-filled:before {
+  content: "\e910";
+}
+.icon-lg-bookmark:before {
+  content: "\e911";
+}
+.icon-lg-cart:before {
+  content: "\e916";
+}
+.icon-lg-verify .path1:before {
+  content: "\e919";
+  color: rgb(0, 0, 0);
+}
+.icon-lg-verify .path2:before {
+  content: "\e91a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-lg-check:before {
+  content: "\e91b";
+}
+.icon-lg-document-filled:before {
+  content: "\e92a";
+}
+.icon-lg-document:before {
+  content: "\e92b";
+}
+.icon-lg-dropdown-down:before {
+  content: "\e92e";
+}
+.icon-lg-dropdown-left:before {
+  content: "\e92f";
+}
+.icon-lg-dropdown-right:before {
+  content: "\e930";
+}
+.icon-lg-dropdown-up:before {
+  content: "\e931";
+}
+.icon-lg-minus:before {
+  content: "\e947";
+}
+.icon-lg-thin-dropdown-down:before {
+  content: "\e961";
+}
+.icon-lg-thin-dropdown-left:before {
+  content: "\e962";
+}
+.icon-lg-thin-dropdown-right:before {
+  content: "\e963";
+}
+.icon-lg-thin-dropdown-up:before {
+  content: "\e964";
+}
+.icon-calendar:before {
+  content: "\e969";
+}
+.icon-language:before {
+  content: "\e99c";
+}
+.icon-sample-product:before {
+  content: "\e9ae";
+}
+.icon-search:before {
+  content: "\e9b4";
+}
+.icon-zoom-in:before {
+  content: "\e9bc";
+}
+.icon-add:before {
+  content: "\e96f";
+}
+.icon-attachment:before {
+  content: "\e97a";
+}
+.icon-bookmark-filled:before {
+  content: "\e97b";
+}
+.icon-bookmark:before {
+  content: "\e97c";
+}
+.icon-cart:before {
+  content: "\e981";
+}
+.icon-verify .path1:before {
+  content: "\e984";
+  color: rgb(0, 0, 0);
+}
+.icon-verify .path2:before {
+  content: "\e985";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-check:before {
+  content: "\e986";
+}
+.icon-document-filled:before {
+  content: "\e994";
+}
+.icon-document:before {
+  content: "\e995";
+}
+.icon-dropdown-down:before {
+  content: "\e998";
+}
+.icon-dropdown-left:before {
+  content: "\e999";
+}
+.icon-dropdown-right:before {
+  content: "\e99a";
+}
+.icon-dropdown-up:before {
+  content: "\e99b";
+}
+.icon-minus:before {
+  content: "\e9b1";
+}
+.icon-thin-dropdown-down:before {
+  content: "\e9cc";
+}
+.icon-thin-dropdown-left:before {
+  content: "\e9cd";
+}
+.icon-thin-dropdown-right:before {
+  content: "\e9ce";
+}
+.icon-thin-dropdown-up:before {
+  content: "\e9cf";
+}
+.icon-sm-calendar:before {
+  content: "\e9c5";
+}
+.icon-sm-language:before {
+  content: "\ea0b";
+}
+.icon-sm-sample-product:before {
+  content: "\ea22";
+}
+.icon-sm-search:before {
+  content: "\ea24";
+}
+.icon-sm-zoom-in:before {
+  content: "\ea2b";
+}
+.icon-sm-add:before {
+  content: "\e9db";
+}
+.icon-sm-attachment:before {
+  content: "\e9e5";
+}
+.icon-sm-bookmark-filled:before {
+  content: "\e9e6";
+}
+.icon-sm-bookmark:before {
+  content: "\e9e7";
+}
+.icon-sm-cart:before {
+  content: "\e9ec";
+}
+.icon-sm-verify .path1:before {
+  content: "\e9ef";
+  color: rgb(0, 0, 0);
+}
+.icon-sm-verify .path2:before {
+  content: "\e9f0";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-sm-check:before {
+  content: "\e9f1";
+}
+.icon-sm-document-filled:before {
+  content: "\e9ff";
+}
+.icon-sm-document:before {
+  content: "\ea00";
+}
+.icon-sm-dropdown-down:before {
+  content: "\ea03";
+}
+.icon-sm-dropdown-left:before {
+  content: "\ea04";
+}
+.icon-sm-dropdown-right:before {
+  content: "\ea05";
+}
+.icon-sm-dropdown-up:before {
+  content: "\ea06";
+}
+.icon-sm-minus:before {
+  content: "\ea1c";
+}
+.icon-sm-thin-dropdown-down:before {
+  content: "\ea36";
+}
+.icon-sm-thin-dropdown-left:before {
+  content: "\ea37";
+}
+.icon-sm-thin-dropdown-right:before {
+  content: "\ea38";
+}
+.icon-sm-thin-dropdown-up:before {
+  content: "\ea39";
+}
