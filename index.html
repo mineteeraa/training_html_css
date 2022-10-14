@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 Form</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/icomoon.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <form action="#">
+        <div class="form-header">
+            <h3>โพสต์ประกาศซื้อ</h3>
+        </div>
+        <div class="form-container">
+            <section class="form-section">
+                <div class="mb-3">
+                    <h4>
+                        <div class="form-title-number">1</div>
+                        รายละเอียดประกาศซื้อ
+                    </h4>
+                </div>
+                <div class="mb-3">
+                    <div class="form-label-section mb-1">
+                        <label for="tender-name">ชื่อประกาศซื้อ</label>
+                        <span class="text-length">0/100</span>
+                    </div>
+                    <div>
+                        <input type="text" id="tender-name" name="tender-name" placeholder="ชื่อประกาศซื้อ">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label>รายการสินค้า</label>
+                    <div class="mt-2">
+                        <div class="form-radio">
+                            <input type="radio" class="mr-2" id="none-product-list" name="product-list"
+                                value="none-product-list" checked>
+                            <div for="none-product-list">ไม่มีรายการสินค้า</div>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" class="mr-2" id="has-product-list" name="product-list"
+                                value="has-product-list">
+                            <div for="has-product-list">มีรายการสินค้า</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 mb-3">
+                            <label>บริษัทของผู้ซื้อ</label>
+                            <div class="dropdown mt-1">
+                                <button class="btn-dropdown" type="button" data-toggle="dropdown" aria-expanded="false">
+                                    <span class="text-truncate">
+                                        กรุณาเลือกบริษัทของผู้ซื้อ...
+                                    </span>
+                                    <span class="icon-lg-dropdown-down"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item selected">
+                                        <span class="icon-lg-check mr-2"></span>
+                                        TRUE
+                                    </li>
+                                    <li class="dropdown-item">
+                                        ACM HOLDING CO., LTD.
+                                    </li>
+                                    <li class="dropdown-item">
+                                        ADEN FULFILLMENT CO., LTD.
+                                    </li>
+                                    <li class="dropdown-item">
+                                        AP&J PRODUCTION CO., LTD.
+                                    </li>
+                                    <li class="dropdown-item">
+                                        ASCEND CAPITAL CO., LTD.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 mb-3">
+                            <label for="category">หมวดหมู่</label>
+                            <div class="input-group mt-1">
+                                <input type="text" class="form-control input-field-group" id="category" name="category"
+                                    placeholder="หมวดหมู่" disabled>
+                                <div class="input-group-append">
+                                    <button class="btn-input-group" type="button">
+                                        เลือก
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label>กำหนดการ</label>
+                    <div class="mt-2">
+                        <div class="form-radio">
+                            <input type="radio" class="mr-2" id="auto-open" name="schedule" value="auto-open" checked>
+                            <div for="auto-open">
+                                เปิดอัตโนมัติทันที หลังจากโพสต์ประกาศซื้อ
+                            </div>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" class="mr-2" id="set-datetime" name="schedule" value="set-datetime">
+                            <div for="set-datetime">
+                                ตั้งค่า วันเปิด,เวลา และวันปิด,เวลา
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="form-date">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 mt-3">
+                                <label>วันเปิดงาน</label>
+                                <div class="position-relative mt-1">
+                                    <input type="text" class="input-date-field" id="start-date"
+                                        placeholder="วว/ดด/ปปปป" />
+                                    <span class="icon-lg-calendar icon-control"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 mt-3">
+                                <label>วันปิดงาน</label>
+                                <div class="position-relative mt-1">
+                                    <input type="text" class="input-date-field" id="end-date"
+                                        placeholder="วว/ดด/ปปปป" />
+                                    <span class="icon-lg-calendar icon-control"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label>มูลค่าโครงการโดยประมาณ</label>
+                        <div class="row mt-1">
+                            <div class="col-md-6 col-sm-12 mb-3">
+                                <div class="dropdown">
+                                    <button class="btn-dropdown" type="button" data-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <span class="text-truncate text-dark">
+                                            THB
+                                        </span>
+                                        <span class="icon-lg-dropdown-down"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item selected">
+                                            <span class="icon-lg-check mr-2"></span>
+                                            THB
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 mb-3">
+                                <div class="dropdown">
+                                    <button class="btn-dropdown" type="button" data-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <span class="text-truncate">
+                                            กรุณาเลือกมูลค่าโครงการโดยประมาณ ...
+                                        </span>
+                                        <span class="icon-lg-dropdown-down"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item selected">
+                                            <span class="icon-lg-check mr-2"></span>
+                                            1-100,000
+                                        </li>
+                                        <li class="dropdown-item">
+                                            100,001-500,000
+                                        </li>
+                                        <li class="dropdown-item">
+                                            500,001-1,000,000
+                                        </li>
+                                        <li class="dropdown-item">
+                                            1,000,001-5,000,000
+                                        </li>
+                                        <li class="dropdown-item">
+                                            5,000,001-10,000,000
+                                        </li>
+                                        <li class="dropdown-item">
+                                            5,000,001-50,000,000
+                                        </li>
+                                        <li class="dropdown-item">
+                                            50,000,001-100,000,000
+                                        </li>
+                                        <li class="dropdown-item">
+                                            100,000,001 ขึ้นไป
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label>พื้นที่จัดส่ง</label>
+                    <div class="dropdown mt-1">
+                        <button class="btn-dropdown" type="button" data-toggle="dropdown" aria-expanded="false">
+                            <span class="text-truncate">
+                                กรุณาเลือกพื้นที่จัดส่ง ...
+                            </span>
+                            <span class="icon-lg-dropdown-down"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item dropdown-checkbox">
+                                <input type="checkbox" class="mr-2">
+                                ทั่วประเทศ
+                            </li>
+                            <div class="dropdown-divider"></div>
+                            <li class="dropdown-item dropdown-checkbox">
+                                <input type="checkbox" class="mr-2">
+                                กรุงเทพฯ
+                            </li>
+                            <li class="dropdown-item dropdown-checkbox">
+                                <input type="checkbox" class="mr-2">
+                                ภาคกลาง
+                            </li>
+                            <li class="dropdown-item dropdown-checkbox">
+                                <input type="checkbox" class="mr-2">
+                                ภาคเหนือ
+                            </li>
+                            <li class="dropdown-item dropdown-checkbox">
+                                <input type="checkbox" class="mr-2">
+                                ภาคเหนือตอนบน
+                            </li>
+                            <li class="dropdown-item dropdown-checkbox">
+                                <input type="checkbox" class="mr-2">
+                                ภาคเหนือตอนล่าง
+                            </li>
+                            <li class="dropdown-item dropdown-checkbox">
+                                <input type="checkbox" class="mr-2">
+                                ภาคตะวันออกเฉียงเหนือ
+                            </li>
+                            <li class="dropdown-item dropdown-checkbox">
+                                <input type="checkbox" class="mr-2">
+                                ภาคตะวันออกเฉียงเหนือตอนบน
+                            </li>
+                            <li class="dropdown-item dropdown-checkbox">
+                                <input type="checkbox" class="mr-2">
+                                ภาคตะวันออกเฉียงเหนือตอนล่าง
+                            </li>
+                            <li class="dropdown-item dropdown-checkbox">
+                                <input type="checkbox" class="mr-2">
+                                ภาคใต้
+                            </li>
+                            <li class="dropdown-item dropdown-checkbox">
+                                <input type="checkbox" class="mr-2">
+                                ภาคใต้ตอนบน
+                            </li>
+                            <li class="dropdown-item dropdown-checkbox">
+                                <input type="checkbox" class="mr-2">
+                                ภาคใต้ตอนล่าง
+                            </li>
+                            <li class="dropdown-item dropdown-checkbox">
+                                <input type="checkbox" class="mr-2">
+                                ภาคตะวันออก
+                            </li>
+                            <li class="dropdown-item dropdown-checkbox">
+                                <input type="checkbox" class="mr-2">
+                                ภาคตะวันตก
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="form-label-section">
+                        <label for="brand">
+                            แบรนด์
+                            <span class="text-optional">
+                                - ถ้ามี
+                            </span>
+                        </label>
+                        <span class="text-length">0/255</span>
+                    </div>
+                    <div class="mt-1">
+                        <textarea id="brand" name="brand" placeholder="แบรนด์"></textarea>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="form-label-section">
+                        <label for="keyword">
+                            คีย์เวิร์ด (ระบุได้ 5 คีย์เวิร์ด)
+                            <span class="text-optional">
+                                - ถ้ามี
+                            </span>
+                        </label>
+                    </div>
+                    <div class="mt-1">
+                        <textarea id="keyword" name="keyword"
+                            placeholder="ช่วยให้ผู้ขายเข้าถึงประกาศซื้อของคุณได้ง่ายยิ่งขึ้น เช่น ถ้าคุณกำลังค้นหา “กล่องกระดาษลูกฟูก” คีย์เวิร์ดสินค้าของคุณ สามารถเป็น “บรรจุภัณฑ์”, “กล่อง”,“กล่องกระดาษ” “กล่องบรรจุภัณฑ์”, “ลูกฟูก”"></textarea>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="form-label-section">
+                        <label for="more-details">
+                            รายละเอียดเพิ่มเติม
+                            <span class="text-optional">
+                                - ถ้ามี
+                            </span>
+                        </label>
+                        <span class="text-length">0/20000</span>
+                    </div>
+                    <div class="mt-1">
+                        <textarea id="more-details" name="more-details"
+                            placeholder="เช่น จำนวน, คุณลักษณะ, ขนาด, สี"></textarea>
+                    </div>
+                </div>
+            </section>
+            <section class="form-section">
+                <div class="mb-3">
+                    <h4>
+                        <div class="form-title-number">2</div>
+                        อัปโหลดเอกสาร
+                    </h4>
+                    <span class="text-optional">
+                        - ถ้ามี
+                    </span>
+                </div>
+                <div class="mb-3">
+                    <div class="text-caption mb-2" for="upload-file">
+                        ไฟล์ต้องเป็น .jpeg, .jpg, .gif, .png, .bmp, .tif, .tiff, .pdf, .doc, .docx, .xls,.xlsx,
+                        .ppt, .pptx, .txt, .zip, .rar, .msg และ ขนาดไม่เกิน 5 MB
+                    </div>
+                    <div class="upload-btn-wrapper">
+                        <input type="file" id="upload-btn" hidden />
+                        <div class="btn-upload">
+                            <span class="icon-sm-attachment mr-12"></span>
+                            เลือกไฟล์
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="form-footer">
+            <div class="form-btn">
+                <button type="button" class="btn btn-cancel">ยกเลิก</button>
+                <button type="submit" class="btn btn-post">โพสต์</button>
+            </div>
+        </div>
+    </form>
+
+    <!-- JavaScript -->
+    <script src="assets/js/jquery.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/bootstrap-datepicker.th.min.js"></script>
+
+    <script>
+        $(function () {
+            $("#start-date, #end-date").datepicker({
+                language: 'th-th',
+                format: 'dd/mm/yyyy',
+                autoclose: true
+            });
+        });
+    </script>
+</body>
+
+</html>
